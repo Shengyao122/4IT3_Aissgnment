@@ -1,0 +1,202 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shengyao Xu | Personal Webpage</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --accent:#2563eb;
+      --line:#040405;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#040405;
+      background:#dbeafe;
+      line-height:1.6;
+    }
+
+    .container{
+      width:min(1000px, 92%);
+      margin:24px auto;
+    }
+
+    .hero{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      background:#dbeafe;
+      border:1px solid #040405;
+      border-radius:16px;
+      padding:20px;
+      box-shadow:0 4px 14px rgba(0,0,0,.05);
+    }
+
+    .hero img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #dbeafe;
+      flex-shrink:0;
+    }
+
+    h1{
+      margin:0 0 6px;
+      font-size:2rem;
+    }
+
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    .contact{
+      margin:6px 0 0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+      margin-top:16px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:18px 20px;
+      box-shadow:0 2px 10px rgba(0,0,0,.03);
+    }
+
+    h2{
+      margin:0 0 10px;
+      font-size:1.25rem;
+      color:#111827;
+      border-left:4px solid var(--accent);
+      padding-left:10px;
+    }
+
+    p{ margin:0 0 10px; }
+    ul, ol{ margin:8px 0 0 22px; }
+    li{ margin:6px 0; }
+
+    .section-note{
+      color:var(--muted);
+      font-size:.92rem;
+    }
+
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:.9rem;
+      margin:20px 0 10px;
+    }
+
+    @media (min-width: 900px){
+      .grid{
+        grid-template-columns:1fr 1fr;
+      }
+      .span-2{
+        grid-column:1 / -1;
+      }
+    }
+
+    @media (max-width: 640px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+      h1{
+        font-size:1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <header class="hero">
+      <img src="profile.jpg" alt="Profile photo of Shengyao Xu" />
+      <div>
+        <h1><em>Shengyao Xu</em></h1>
+        <p class="subtitle">
+          Bachelor of Technology (Co-op) — Automation Systems Engineering Technology
+        </p>
+        <p class="contact">
+          Hamilton, ON, Canada · Email: xu44@mcmaster.ca
+        </p>
+      </div>
+    </header>
+
+    <section class="grid">
+
+      <article class="card">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>High School:</strong> Maple Leaf International School, Jiangsu, China.</li>
+          <li><strong>University:</strong> McMaster University (Canada), Bachelor of Technology (B.Tech.)</li>
+          <li><strong>Major:</strong> Automation Systems Engineering Technology (Co-op Program)</li>
+          <li><strong>Expected Completion:</strong> 2026</li>
+          <li><strong>CGPA:</strong> 10.8 / 12</li>
+        </ul>
+        <p class="section-note">
+          Degrees upon completion: B.Tech degree, Advanced Diploma in Chemical Engineering Technology, and Business Management Certificate.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Highlights of Qualifications</h2>
+        <ul>
+          <li>Relevant coursework: C++ programming, Control Theory, Electricity & Electronics, PLC programming, AutoCAD, Engineering Statistics.</li>
+          <li>Strong communication and problem-solving skills through group projects and extracurricular activities.</li>
+          <li>1-year engineering study experience at BUAA (GPA: 3.7/4.0).</li>
+          <li>SIEMENS SITRAIN Digital Industry Academy Certificate (PBL1).</li>
+        </ul>
+      </article>
+
+      <article class="card span-2">
+        <h2>Work</h2>
+        <p>
+          <strong><em>Core Component Intern</em></strong> — AGV Chassis Team, TETRABOT (NANJING) Development Co.
+          <br />
+          <strong>Type:</strong> Full-time Internship (3,000 RMB/month)
+          <br />
+          <strong>Dates:</strong> January 2, 2025 – August 30, 2025
+        </p>
+        <ul>
+          <li>Studied AGV disassembly and assembly and learned fundamental AGV chassis concepts.</li>
+          <li>Learned robot debugging and fault checking with guidance from senior engineers.</li>
+          <li>Recognized and used key AGV components such as PCB, VCU, and RCU.</li>
+        </ul>
+      </article>
+
+      <article class="card span-2">
+        <h2>Hobbies</h2>
+        <ol>
+          <li>Gaming: I enjoy FPS and MOBA games.</li>
+          <li>Playing guitar: It helps me relax and manage stress.</li>
+          <li>Traveling: I enjoy exploring different countries, landscapes, and cultures.</li>
+        </ol>
+      </article>
+
+    </section>
+
+    <footer>
+      &copy; 2026 Shengyao Xu
+    </footer>
+  </main>
+</body>
+</html>
